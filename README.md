@@ -2,7 +2,9 @@
 
 This template should help get you started developing with Tauri and React in Vite.
 
-(https://github.com/nel417/conjug8ed/actions/workflows/main.yml/badge.svg?branch=main)
+
+
+![example workflow](https://github.com/nel417/conjug8ed/actions/workflows/main.yml/badge.svg?branch=main)
 
 ## Recommended IDE Setup
 
