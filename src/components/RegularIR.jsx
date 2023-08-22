@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import irregularVerbs from './data/irregular';
 import { Link } from 'react-router-dom';
+import reg from '../data/regularIR';
 
-const verbList = irregularVerbs;
-function VocabularyGame() {
+const verbList = reg;
+function RegularIR() {
     const [currentVerb, setCurrentVerb] = useState(null);
     const [userConjugations, setUserConjugations] = useState({});
     const [isCorrect, setIsCorrect] = useState(false);
@@ -24,9 +24,10 @@ function VocabularyGame() {
   
     const handleInputChange = (event) => {
       const { name, value } = event.target;
+      const lowercaseValue = value.toLowerCase();
       setUserConjugations((prevConjugations) => ({
         ...prevConjugations,
-        [name]: value,
+        [name]: lowercaseValue,
       }));
     };
   
@@ -50,7 +51,7 @@ function VocabularyGame() {
   
     return (
       <div className="conjugation-game-container">
-        <h1 className="title">Conjugation Game</h1>
+        <h1 className="title">Regular -IR verbs</h1>
         <Link to="/">Back to Home</Link>
 
         {currentVerb && <h2 className="verb-label">Conjugate the verb: {currentVerb}</h2>}
@@ -77,4 +78,4 @@ function VocabularyGame() {
     );
   }
   
-export default VocabularyGame;
+export default RegularIR;

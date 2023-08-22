@@ -1,9 +1,9 @@
 
 
 import React, { useState, useEffect } from 'react';
-import verbs from './data/presentConj';
+import verbs from '../data/presentConj';
 import { Link } from 'react-router-dom';
-import './App.css'
+import '../App.css'
 
 const verbList = verbs;
 
@@ -28,9 +28,10 @@ function ConjugationGame() {
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
+    const lowercaseValue = value.toLowerCase();
     setUserConjugations((prevConjugations) => ({
       ...prevConjugations,
-      [name]: value,
+      [name]: lowercaseValue,
     }));
   };
 
@@ -56,7 +57,7 @@ function ConjugationGame() {
     <div className="conjugation-game-container">
             <Link to="/">Back to Home</Link>
 
-      <h1 className="title">Conjugation Game</h1>
+      <h1 className="title">Regular ER verbs</h1>
       {currentVerb && <h2 className="verb-label">Conjugate the verb: {currentVerb}</h2>}
       {currentVerb && Object.keys(verbList[currentVerb]).map((person) => (
         <div className="conjugation-input" key={person}>

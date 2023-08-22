@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ConjugationGame from './ConjugationGame';
-import VocabularyGame from './VocabularyGame';
+import ConjugationGame from './components/ConjugationGame';
+import VocabularyGame from './components/VocabularyGame';
+import RegularIR from './components/RegularIR';
 import './App.css';
-import Home from './Home';
+import Home from './components/Home';
+import IrregularIR from './components/IrregularIR';
 
 function App() {
   return (
@@ -11,8 +13,11 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/conjugation" element={<ConjugationGame />} />
-          <Route path="/vocabulary" element={<VocabularyGame />} />
+          <Route path="/regularER" element={<ConjugationGame />} />
+          <Route path="/irregularER" element={<VocabularyGame />} />
+          <Route path="/regularIR" element={<RegularIR />} />
+          <Route path="/irregularIR" element={<IrregularIR />} />
+
         </Routes>
       </div>
     </Router>
