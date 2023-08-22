@@ -1,0 +1,28 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s;
+}
+
+.card:hover {
+  background-color: #e0e0e0;
+}
+
+
+.error-message {
+  color: red;
+}
+
+.success-message {
+  color: green;
+}

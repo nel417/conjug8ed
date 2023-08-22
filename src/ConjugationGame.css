@@ -1,0 +1,63 @@
+.conjugation-game-container {
+    text-align: center;
+    padding: 20px;
+    background: green;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .verb-label {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .conjugation-input {
+    margin-bottom: 10px;
+  }
+  
+  .person-label {
+    font-weight: bold;
+  }
+  
+  .input-field {
+    padding: 5px;
+    margin-left: 10px;
+    width: 60px;
+  }
+  
+  .check-button {
+    padding: 8px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .check-button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  .correct-count {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .error-message, .success-message {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  
+  .success-message {
+    color: green;
+  }
+  
